@@ -1,0 +1,984 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vinay - personal portfolio</title>
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@400;700&family=Saira+Stencil+One&display=swap"
+    rel="stylesheet">
+</head>
+
+<body id="top" class="dark_theme">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <h1 class="h1 logo">
+        <a href="#">Vinay Naik<span>.</span></a>
+      </h1>
+
+      <div class="navbar-actions">
+
+        <select name="language" id="lang">
+          <option value="en">Eng</option>
+          <option value="kn">Knn</option>
+        </select>
+
+        <button class="theme-btn" aria-label="Change Theme" title="Change Theme" data-theme-btn>
+          <span class="icon"></span>
+        </button>
+
+      </div>
+
+      <button class="nav-toggle-btn" aria-label="Toggle Menu" title="Toggle Menu" data-nav-toggle-btn>
+        <span class="one"></span>
+        <span class="two"></span>
+        <span class="three"></span>
+      </button>
+
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+
+          <li>
+            <a href="#home" class="navbar-link">Home.</a>
+          </li>
+
+          <li>
+            <a href="#about" class="navbar-link">About.</a>
+          </li>
+
+          <li>
+            <a href="#skills" class="navbar-link">Skills.</a>
+          </li>
+
+          <li>
+            <a href="#portfolio" class="navbar-link">Works.</a>
+          </li>
+
+          <li>
+            <a href="#contact" class="navbar-link">Contact.</a>
+          </li>
+
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article class="container">
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="hero" id="home">
+
+        <figure class="hero-banner">
+
+          <picture>
+            <source srcset="images/Untitled design (1)(52).png" media="(min-width: 768px)">
+            <source srcset="images/Untitled design (1)(52).png" media="(min-width: 500px)">
+            <img src="images/Untitled design (1) (52).png" alt="A man in a blue shirt with a happy expression"
+              class="w-100">
+          </picture>
+
+        </figure>
+
+        <div class="hero-content">
+          <h2 class="h2 hero-title">Hi I'm A <span id="changing-text">Web Designer & Developer</span></h2>
+
+          <a href="#contact" class="btn btn-primary">Contact Me</a>
+
+        </div>
+
+        <ul class="hero-social-list">
+
+          <li>
+            <a href="#" class="hero-social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+
+              <div class="tooltip">Facebook</div>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="hero-social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+
+              <div class="tooltip">Twitter</div>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="hero-social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+
+              <div class="tooltip">Linkedin</div>
+            </a>
+          </li>
+
+        </ul>
+
+        <a href="#stats" class="scroll-down">Scroll</a>
+
+      </section>
+
+
+
+
+
+      
+
+
+
+
+      <!-- 
+        - #ABOUT
+      -->
+
+      <section class="about" id="about">
+
+        <figure class="about-banner">
+          <img src="images/animated.png" alt="A man in a alice blue shirt with a thinking expression"
+            class="w-100">
+        </figure>
+
+        <div class="about-content section-content">
+
+          <p class="section-subtitle">About me</p>
+
+          <h2 class="h3 section-title">Need a Creative Product? I can Help You!</h2>
+
+          <p class="section-text">
+            Hi! I’m Vinay Naik, and I’m a developer who has passion for building clean web applications with intuitive
+            functionalities. I enjoy the process of turning ideas into reality using creative solutions. I’m always
+            curious about
+            learning new skills, tools, and concepts. In addition to working on various solo full stack projects, I have
+            worked with
+            creative teams, which involves daily stand-ups and communications, source control, and project management.
+          </p>
+
+          <div class="btn-group">
+            <a href="#contact"><button class="btn btn-secondary">Hire me</button></a>
+
+            <button class="btn btn-primary" onclick="downloadCV()">Download cv</button>
+            <button id="displayButton" style="display: none;" onclick="displayCV()"></button>
+            <iframe id="cvFrame" style="display: none;"></iframe>
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <!-- 
+        - #STATS
+      -->
+
+      <section class="stats" id="stats">
+        <ul class="stats-list">
+
+          <li>
+            <a href="#about1" class="stats-card">
+
+              <div class="card-icon">
+                <img src="images/stats-card_icon-1.png" alt="Badge icon">
+              </div>
+
+              <h2 class="h2 card-title" style="font-size: 35px;">
+                Education
+              </h2>
+
+              <ion-icon name="chevron-forward-outline"></ion-icon>
+
+            </a>
+          </li>
+
+          <li>
+            <a href="#about2" class="stats-card">
+
+              <div class="card-icon">
+                <img src="images/stats-card_icon-2.png" alt="Checkmark icon">
+              </div>
+
+              <h2 class="h2 card-title" style="font-size: 35px;">
+                Experience
+              </h2>
+
+              <ion-icon name="chevron-forward-outline"></ion-icon>
+
+            </a>
+          </li>
+
+          <li>
+            <a href="#about3" class="stats-card">
+
+              <div class="card-icon">
+                <img src="images/stats-card_icon-3.png" alt="Peoples rating icon">
+              </div>
+
+              <h2 class="h2 card-title" style="font-size: 35px;">
+                Certifications
+              </h2>
+
+              <ion-icon name="chevron-forward-outline"></ion-icon>
+
+            </a>
+          </li>
+
+        </ul>
+        <section class="about1" id="about1" style="margin-top: 150px;">
+          <div class="about-content section-content">
+      
+            <p class="section-subtitle">Education</p>
+      
+            <h2 class="h3 section-title">Bachelor Of Engineering </h2>
+
+            <div class="card-icon1" style="display: inline;">
+              
+              <img class="img" src="images/college logo.png" alt="Peoples rating icon" width="70px" style="border-radius: 100px; display: inline;" >
+              
+              <div><a href="https://www.aitm.edu.in/"><span class="vinay">Anjuman Institute Of Technology & Management , Bhatkal</span></a></div>
+            </div>
+      
+            <p class="section-text" style="display: inline;">
+              07/2019 - 05/2023<br>
+              <p class="vinay1">Computer Science & Engineering</p>
+              <p class="vinay2">CGPA 8.3/10</p>
+            </p>
+
+            <h2 class="h3 section-title" style="margin-top: 20px;">Pre University</h2>
+
+            <div class="card-icon1">
+              <img src="images/images.jpg" alt="Peoples rating icon" width="70px" style="border-radius: 100px;">
+              <div><a href="https://www.schoolsworld.in/schools/showcollege.php?college_id=29100909812"><span class="vinay">The New English Pre University College , Bhatkal</span></a></div>
+            </div>
+
+            <p class="section-text" style="display: inline;">
+              07/2017 - 06/2019<br>
+              <p class="vinay1">PCMCs</p>
+              <p class="vinay2">PERCENTAGE 8.3/10</p>
+            </p>
+      
+          </div>
+      
+        </section>
+        <section class="about1" id="about2" style="margin-top: 150px;">
+          <div class="about-content section-content">
+      
+            <p class="section-subtitle">Experience</p>
+      
+            <h2 class="h3 section-title" style="margin-bottom: 1px;">Internship</h2>
+            <p  class="section-text" style="display: inline; margin-top:1px;">Unlocking Opportunities , Building a Strong Foundation for the Future</p>
+
+            <div class="card-icon1" style="margin-top: 30px;">
+              <img src="images/company logo.png" alt="Peoples rating icon" width="70px" style="border-radius: 100px;">
+              <div><a href="https://www.varconstech.com/"><span class="vinay">Varcons Technologies Pvt Ltd Banglore</span></a></div>
+            </div>
+            
+            <p class="section-text" style="display: inline;">
+              08/2022 - 09/2022<br>
+              <p class="vinay1">PROJECT -</p>
+              <a href="https://github.com/VINAY9516/Stockport-Predictive-Sentiment-Analysis"><p class="section-text"><u>Stockport Predictive-Twitter Sentiment Analysis</u></p></a>
+              <p class="vinay2">Skills Learned -</p>
+              <ul class="section-text">
+              <li>Machine Learning</li>
+              <li>Python Programming Language</li>
+              </ul>
+            </p>
+      
+          </div>
+        
+             
+      </section>
+
+
+
+
+
+
+      <!-- 
+        - #SKILLS
+      -->
+
+      <section class="skills" id="skills">
+
+        <div class="skills-content section-content">
+
+          <p class="section-subtitle">My skills</p>
+
+          <h2 class="h3 section-title">What My Programming Skills Included?</h2>
+
+          <p class="section-text">
+            I develop simple, intuitive and responsive user interface that helps users get things done with less effort
+            and time
+            with those technologies.
+          </p>
+
+          <div class="skills-toggle" data-toggle-box>
+            <button class="toggle-btn active" data-toggle-btn>Skills</button>
+
+            <button class="toggle-btn" data-toggle-btn>Tools</button>
+          </div>
+
+        </div>
+
+        <div class="skills-box" data-skills-box>
+
+          <ul class="skills-list">
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">HTML5</div>
+
+                <div class="card-icon">
+                  <img src="images/html5.png" alt="HTML5 logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">CSS3</div>
+
+                <div class="card-icon">
+                  <img src="images/css3.png" alt="CSS3 logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">JavaScript</div>
+
+                <div class="card-icon">
+                  <img src="images/javascript.png" alt="JavaScript logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Bootstrap</div>
+
+                <div class="card-icon">
+                  <img src="images/bootstrap.png" alt="Bootstrap logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Python</div>
+
+                <div class="card-icon">
+                  <img src="images/python.png" width="50px" height="50px" alt="Python logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Java</div>
+
+                <div class="card-icon">
+                  <img src="images/java-logo-1.png" width="60px" height="60px" alt="Java logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">MySQL</div>
+
+                <div class="card-icon">
+                  <img src="images/mysql-logo-3.png" width="65px" height="65px" alt="Java logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">C</div>
+
+                <div class="card-icon">
+                  <img src="images/c.png" width="50px" height="50px" alt="Java logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">C++</div>
+
+                <div class="card-icon">
+                  <img src="images/cplusplus.png" width="50px" height="50px" alt="Java logo">
+                </div>
+              </div>
+            </li>
+
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Angular</div>
+
+                <div class="card-icon">
+                  <img src="images/angular.png"  alt="Angular logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">React</div>
+
+                <div class="card-icon">
+                  <img src="images/react.png" alt="React logo">
+                </div>
+              </div>
+            </li>
+
+            
+
+          </ul>
+
+          <ul class="tools-list">
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">PyCharm</div>
+
+                <div class="card-icon">
+                  <img src="images/JetBrains-PyCharm.png" width="55px" height="50px" alt="PyCharm logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Django</div>
+
+                <div class="card-icon">
+                  <img src="images/django.png" width="55px" height="60px" alt="django logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">NetBeans</div>
+
+                <div class="card-icon">
+                  <img src="images/NetBeans-Logo.wine.png" width="88px" height="60px" alt="NetBeans logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Anaconda</div>
+
+                <div class="card-icon">
+                  <img src="images/clipart3490136.png" width="47px" height="47px" alt="NetBeans logo">
+                </div>
+              </div>
+            </li>
+            
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">MySQL</div>
+
+                <div class="card-icon">
+                  <img src="images/mysql-logo-3.png" width="65px" height="65px" alt="MySQL logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Command Line</div>
+
+                <div class="card-icon">
+                  <img src="images/command.png" alt="Command Line logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">VS Code</div>
+
+                <div class="card-icon">
+                  <img src="images/vs-code.png"  alt="VS Code logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Power Point</div>
+
+                <div class="card-icon">
+                  <img src="images/pngegg.png" width="46px" height="50px" alt="Powerpoint logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Excel</div>
+
+                <div class="card-icon">
+                  <img src="images/pngegg (1).png" width="45px" height="45px" alt="Excel logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Google Sheets</div>
+
+                <div class="card-icon">
+                  <img src="images/pngwing.com.png" width="65px" height="65px" alt="Sheets logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Photoshop</div>
+
+                <div class="card-icon">
+                  <img src="images/photoshop.png" alt="Photoshop logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Adobe XD</div>
+
+                <div class="card-icon">
+                  <img src="images/adobe-xd.png" alt="Adobe XD logo">
+                </div>
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+
+      </section>
+
+
+
+
+
+      <!-- 
+        - #PROJECTS
+      -->
+
+      <section class="project" id="portfolio">
+
+        <ul class="project-list">
+
+          <li>
+            <div class="project-content section-content">
+
+              <p class="section-subtitle">My Works</p>
+
+              <h2 class="h3 section-title">See My Works Which Will Amaze You!</h2>
+
+              <p class="section-text">
+                I developed the high-quality projects that serves for the long-term. Well-documented, clean, easy and
+                elegant interface
+                helps any non-technical clients.
+              </p>
+
+            </div>
+          </li>
+
+          <li>
+            <a href="https://github.com/VINAY9516/AI-Based-Object-Detection-Using-Yolo-V5" class="project-card">
+
+              <figure class="card-banner">
+                <img src="images/object detection.jpg" class="w-100" width="500px" height="325px" alt="Mobile device detecting human face on a Orange background.">
+              </figure>
+
+              <div class="card-content">
+                <h3 class="h4 card-title">AI Based Object Detection</h3>
+
+                <time class="publish-date" datetime="2022-04">March 2023</time>
+              </div>
+
+            </a>
+          </li>
+
+          <li>
+            <a href="https://github.com/VINAY9516/Hotel-Management-System" class="project-card">
+
+              <figure class="card-banner">
+                <img src="images/hotel management.jpg" class="w-100" width="500px" height="325px" alt="On a White background, a Hotel image.">
+              </figure>
+
+              <div class="card-content">
+                <h3 class="h4 card-title">Hotel Management System</h3>
+
+                <time class="publish-date" datetime="2022-04">Jan 2021</time>
+              </div>
+
+            </a>
+          </li>
+
+          <li>
+            <a href="https://github.com/VINAY9516/Stockport-Predictive-Sentiment-Analysis" class="project-card">
+
+              <figure class="card-banner">
+                <img src="images/twiter analysis.jpg" class="w-100" width="500px" height="325px"
+                  alt="A person hand with twitter logo and it's analysis chart on a table  background.">
+              </figure>
+
+              <div class="card-content">
+                <h3 class="h4 card-title">"Stockport Predective"-Twitter Sentimental Analysis</h3>
+
+                <time class="publish-date" datetime="2022-04">Sep 2022</time>
+              </div>
+
+            </a>
+          </li>
+
+          <li>
+            <a href="https://github.com/VINAY9516/Steam-Engine" class="project-card">
+
+              <figure class="card-banner">
+                <img src="images/steam engine.jpg" class="w-100" width="500px" height="325px"
+                  alt="Internal structure of steam engine on a white background.">
+              </figure>
+
+              <div class="card-content">
+                <h3 class="h4 card-title">Working of steam engine</h3>
+
+                <time class="publish-date" datetime="2022-04">Aug 2021</time>
+              </div>
+
+            </a>
+          </li>
+
+          
+
+          <li>
+            <button class="load-more">Load more work</button>
+          </li>
+
+        </ul>
+
+      </section>
+
+
+
+      <!--
+        -Certification
+      -->
+
+    </section>
+    <section class="about1" id="about3" style="margin-top: 60px;">
+      <div class="about-content section-content">
+  
+        <p class="section-subtitle">Certifications</p>
+  
+        <h2 class="h3 section-title">Cetified and Ready to Excel!</h2>
+
+        <ol>
+          <p class="vinay1">1] Cisco Networking Academy's Python Essentials 1</p>
+  
+        <p class="section-text">
+          Developed practical skills in codding , problem - solving , automation.
+        </p>
+
+        <p class="vinay1">2] Coding Ninjas / studio's Core Java</p>
+  
+        <p class="section-text">
+          Gained key concepts such as object - oriented programming , data structures , and algorithms.
+        </p>
+
+        <p class="vinay1">3] Google / Data Analytics Professional Certificate</p>
+  
+        <p class="section-text">
+          Completed extensive six month job - ready Google Career Certificate training . Demostrated hands - on experience with data cleaning , data visualization , project management , interpreting , communicating data analytics findings and fluency in computer programming language. 
+        </p>
+
+        <p class="vinay1">4] Certification of Machine Learning with Python</p>
+  
+        <p class="section-text">
+          Internship - Varcons Technologies Pvt Ltd Banglore
+        </p>
+        </ol>
+          
+  
+      </div>
+  
+    </section>
+
+
+
+
+
+      <!-- 
+        - #CONTACT
+      -->
+
+      <section class="contact" id="contact">
+
+        <div class="contact-content section-content">
+
+          <p class="section-subtitle">Contact</p>
+
+          <h2 class="h3 section-title">Get In Touch</h2>
+
+          <p class="section-text">
+            For inquiries you can connect with me via Email , Find my latest updates on My Social media , or reach out directly via phone call
+          </p>
+
+          <ul class="contact-list">
+
+            <li class="contact-list-item">
+
+              <div class="contact-item-icon">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
+
+              <div class="wrapper">
+                <h3 class="h4 contact-item-title">Address:</h3>
+
+                <address class="contact-info">
+                  135<br>
+                  Mannu Honda Tatti Hakkal <br>Shirali , Bhatkal<br>Uttara Kannada, Karnataka<br>581354 
+                </address>
+              </div>
+
+            </li>
+
+            <li class="contact-list-item">
+
+              <div class="contact-item-icon">
+                <ion-icon name="call-outline"></ion-icon>
+              </div>
+
+              <div class="wrapper">
+                <h3 class="h4 contact-item-title">Phone:</h3>
+
+                <a  class="contact-info">91+&nbsp;&nbsp;9008304516</a>
+              </div>
+
+            </li>
+
+            <li class="contact-list-item">
+
+              <div class="contact-item-icon">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
+
+              <div class="wrapper">
+                <h3 class="h4 contact-item-title">Email:</h3>
+
+                <a  class="contact-info">vnaik9516@gmail.com.com</a>
+
+                <a  class="contact-info">vnaik2730@gmail.com.com</a>
+              </div>
+
+            </li>
+
+            <li>
+              <ul class="contac-social-list">
+
+                <li>
+                  <a href="#" class="contact-social-link">
+                    <div class="tooltip">Facebook</div>
+
+                    <ion-icon name="logo-facebook"></ion-icon>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="contact-social-link">
+                    <div class="tooltip">Twitter</div>
+
+                    <ion-icon name="logo-twitter"></ion-icon>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="contact-social-link">
+                    <div class="tooltip">Linkedin</div>
+
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="contact-social-link">
+                    <div class="tooltip">Youtube</div>
+
+                    <ion-icon name="logo-youtube"></ion-icon>
+                  </a>
+                </li>
+
+              </ul>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <form  action="https://formspree.io/f/xknlvqbr"  method="POST" class="contact-form">
+
+          <div class="form-wrapper">
+
+            <label for="name" class="form-label">Name</label>
+
+            <div class="input-wrapper">
+
+              <input type="text" name="name" id="name" required placeholder="e.g John Doe" class="input-field">
+
+              <ion-icon name="person-circle"></ion-icon>
+
+            </div>
+
+          </div>
+
+          <div class="form-wrapper">
+
+            <label for="email" class="form-label">Email</label>
+
+            <div class="input-wrapper">
+
+              <input type="email" name="email" id="email" required placeholder="e.g johndoe@mail.com"
+                class="input-field">
+
+              <ion-icon name="mail"></ion-icon>
+
+            </div>
+
+          </div>
+
+          <div class="form-wrapper">
+
+            <label for="phone" class="form-label">Phone</label>
+
+            <div class="input-wrapper">
+
+              <input type="tel" name="phone" id="phone" required placeholder="Phone Number" class="input-field">
+
+              <ion-icon name="call"></ion-icon>
+
+            </div>
+
+          </div>
+
+          <div class="form-wrapper">
+
+            <label for="message" class="form-label">Message</label>
+
+            <div class="input-wrapper">
+
+              <textarea name="message" id="message" required placeholder="Write message..."
+                class="input-field"></textarea>
+
+              <ion-icon name="chatbubbles"></ion-icon>
+
+            </div>
+
+          </div>
+
+          <button type="submit" name="submit" value="Submit" class="btn btn-primary">Send</button>
+          
+        </form>
+
+      </section>
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+    <div class="container">
+
+      <p class="h1 logo">
+        <a href="#">
+          Jack<span>.</span>
+        </a>
+      </p>
+
+      <p class="copyright">
+        &copy; 2022 <a href="#">codewithsadee</a>. All rights reserved
+      </p>
+
+    </div>
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #GO TO TOP
+  -->
+
+  <a href="#top" class="go-top" data-go-top title="Go to Top">
+    <ion-icon name="arrow-up"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
